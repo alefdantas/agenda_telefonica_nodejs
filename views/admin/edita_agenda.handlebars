@@ -1,0 +1,15 @@
+<h3>editar contato</h3>
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/edita_agenda">
+            <input type="hidden" name="id" value="{{lista._id}}">
+            <label for="nome">Digite o nome do seu novo contato: </label>
+            <input class="form-control" type="text" id="nome_usuario" name="nome_usuario" value="{{lista.nome}}">
+            <label for="telefone">Digite o telefone do contato: </label>
+            <input class="form-control" type="text" id="telefone_usuario" name="telefone_usuario" value="{{lista.telefone}}">
+            <br>
+            <button type="submit" class="btn btn-primary">salvar</button>
+        </form>
+    </div>
+</div>
+

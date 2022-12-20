@@ -1,0 +1,21 @@
+{{#each erros}}
+
+<div class="alert alert-danger">{{texto}}</div>
+
+{{else}}
+
+{{/each}}
+
+<h3>Novo contato</h3>
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/cadastrar_agenda">
+            <label for="nome">Digite o nome do seu novo contato: </label>
+            <input class="form-control" type="text" name="nome_usuario">
+            <label for="telefone">Digite o telefone do contato: </label>
+            <input class="form-control" type="text" name="telefone_usuario">
+            <br>
+            <button type="submit" class="btn btn-primary">salvar</button>
+        </form>
+    </div>
+</div>
